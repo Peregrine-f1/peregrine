@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝙋𝙚𝙧𝙚𝙜𝙧𝙞𝙣𝙚</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d6d6d6;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            z-index: 10;
+        }
+
+        .top-bar p {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: #0a042b;
+            margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            transition: width 0.5s ease-in-out;
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .top-bar p:hover {
+            width: 160px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-left: 40px;
+        }
+
+        .nav-link {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #0a042b;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ed6109;
+        }
+
+        ::selection {
+            background-color: rgba(237, 97, 9, 0.5);
+        }
+
+        .header-container {
+            margin-top: 80px;
+            width: 80%;
+            height: 350px;
+            background-color: #0a042b;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: bolder;
+            color: white;
+            position: relative;
+            margin: 0;
+        }
+
+        h1::after {
+            content: attr(data-shadow);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.15);
+            transform: scaleY(-1);
+            font-weight: bolder;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            width: 80%;
+        }
+
+        .info-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .info-box img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .info-box h2 {
+            font-size: 1.5rem;
+            color: #0a042b;
+        }
+
+        .info-box p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .see-more {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ed6109;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #ed6109;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .see-more:hover {
+            background-color: #ed6109;
+            color: white;
+        }
+
+        /* Orange Breaking The Limits Box */
+        .breaking-limits-box {
+            margin-top: 40px;
+            background-color: #ed6109; /* Orange background */
+            color: white; /* White text */
+            width: 76%;
+            text-align: center;
+            padding: 40px;
+            font-size: 2rem;
+            font-weight: thin;
+            border-radius: 10px;
+            letter-spacing: 0.7rem;
+            text-transform: uppercase;
+        }
+        .what-are-we-box {
+    width: 76%; /* Matches the width of the header and other sections */
+    background-color: #ffffff; /* White background */
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.what-are-we-box h2 {
+    font-size: 2rem;
+    color: #0a042b; /* Same navy color as other titles */
+    margin-bottom: 20px;
+}
+
+.what-are-we-box p {
+    font-size: 1rem;
+    color: #333;
+}
+                        /* Replace "P" with logo */
+        .top-bar img {
+            height: 40px; /* Adjust the logo size */
+            cursor: pointer;
+         }
+
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <a href="index.html">
+    <img src="logo.png" alt="Logo">
+</a>
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="team.html" class="nav-link">The Team</a>
+        </div>
+    </div>
+
+    <!-- Header Container -->
+    <div class="header-container header-box">
+        <h1 data-shadow="Peregrine">Peregrine</h1>
+    </div>
+
+    <!-- Info Section with Three Boxes -->
+    <div class="info-section">
+        <div class="info-box">
+            <img src="wheel.png" alt="About Us">
+            <h2>About Us</h2>
+            <p>Learn more about our mission, vision, and values.</p>
+            <a href="about.html" class="see-more">See More</a>
+        </div>
+
+        <div class="info-box">
+            <img src="mail.png" alt="Contact Us">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for any inquiries or collaborations.</p>
+            <a href="contact.html" class="see-more">See More</a>
+        </div>
+
+        <div class="info-box">
+            <img src="team.png" alt="The Team">
+            <h2>The Team</h2>
+            <p>Meet the people who make it all happen.</p>
+            <a href="team.html" class="see-more">See More</a>
+        </div>
+    </div>
+
+    <!-- Breaking the Limits Box -->
+    <div class="breaking-limits-box">
+        Breaking the Limits
+    </div>
+    <!-- What are we Box -->
+<div class="what-are-we-box">
+    <h2>What are we?</h2>
+    <p>Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here.Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here.Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here.Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here. Insert text here.</p>
+</div>
+    
+<!-- Container for image and text box, styled like the rest of the content -->
+<div style="width: 76%; margin: 40px auto 60px auto; overflow: hidden;">
+    <!-- Image on the left (50% width) -->
+    <img src="designs.png" alt="Designs" style="width: 50%; height: auto; border-radius: 15px; float: left; margin-right: 20px;">
+
+    <!-- Text alongside the image -->
+    <div style="width: 45%; float: left; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2>Entry class stage designs</h2>
+        <p>This is the entry class stage designs, being the fastest and nicest looking design, it has air released into a small container and shoots of down a track, this design went 11 meters per second as it's fastest recorded speed.</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
