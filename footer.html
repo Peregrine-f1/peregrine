@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-bottom: 60px; /* Prevents content from overlapping with the footer */
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+        }
+        .footer .contact {
+            flex: 1;
+        }
+        .footer .contact a {
+            color: #f0a500;
+            text-decoration: none;
+        }
+        .footer .team-name {
+            flex: 1;
+            font-weight: bold;
+        }
+        .footer .search-bar {
+            flex: 1;
+        }
+        .footer .search-bar input[type="text"] {
+            width: 80%;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .footer .search-bar button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f0a500;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Your main content here -->
+
+<div class="footer">
+    <div class="contact">
+        <span>Contact us: </span>
+        <a href="mailto:peregrine@hitchinboys.co.uk">peregrine@hitchinboys.co.u</a>
+    </div>
+    <div class="team-name">
+        Peregrine
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="button">Go</button>
+    </div>
+</div>
+
+</body>
+</html>
